@@ -1,0 +1,78 @@
+.section {
+    // .section__innovation
+    &__innovation {
+        padding-top: 120px;
+        padding-bottom: 30px;
+        @media (max-width: $breakpoint768) {
+            padding-top: 50px;
+        }
+    }
+}
+
+.innovation {
+}
+
+.swiper {
+    // .swiper__innovation
+
+    &__innovation {
+    }
+}
+
+.swiper-slide {
+    background: #ffffff;
+    box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 84px;
+    gap: 10px;
+    margin-top: 115px;
+    height: 119px;
+    @media (max-width: $breakpoint768) {
+        margin-top: 60px;
+    }
+    @media (max-width: $breakpoint480) {
+        margin-top: 10px;
+    }
+    img {
+        // Додайте будь-які стилі для зображення слайду, якщо потрібно
+    }
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    // .nav__btns
+
+    &__btns {
+        display: flex;
+        margin-top: 30px;
+        cursor: pointer;
+        gap: 10px;
+        justify-content: center;
+        gap: 300px;
+        @media (max-width: $breakpoint768) {
+            gap: 200px;
+        }
+    }
+}
+
+.swiper-button-prev {
+    &.swiper-button-disabled {
+        path {
+            fill: rgb(151, 142, 142);
+        }
+    }
+}
+.swiper-button-next {
+    &.swiper-button-disabled {
+        path {
+            fill: rgb(151, 142, 142);
+        }
+    }
+}

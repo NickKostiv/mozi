@@ -1,0 +1,102 @@
+.section {
+    border-bottom: 1px solid rgba(197, 203, 226, 0.5);
+    // .section__brands
+    &__brands {
+        padding: 101px 0 128px 0;
+        @media (max-width: $breakpoint768) {
+            padding: 60px 0 68px 0;
+        }
+    }
+}
+.brands {
+    // .brands__item
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    @media (max-width: $breakpoint992) {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+    &__item {
+        margin-top: 20px;
+        @media (max-width: $breakpoint992) {
+            display: flex;
+            flex: 0 0 20%;
+            justify-content: center;
+        }
+        @media (max-width: $breakpoint768) {
+            flex: 0 0 30%;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+}
+.cards {
+    display: flex;
+    margin-top: 150px;
+    gap: 32px;
+    justify-content: center;
+    @media (max-width: $breakpoint768) {
+        margin-top: 30px;
+    }
+    @media (max-width: $breakpoint480) {
+        flex-wrap: wrap;
+        // justify-content: center;
+        align-items: center;
+    }
+    // .cards__item
+
+    &__item {
+        background: #ffffff;
+        box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+        border-radius: 8px;
+        flex-direction: column;
+        display: flex;
+    }
+
+    // .cards__item-title
+
+    &__item-title {
+        margin-top: 53px;
+        font-family: "Europa";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 62px;
+        align-items: center;
+        text-align: center;
+        color: $blueColor;
+        @media (max-width: $breakpoint768) {
+            font-size: 36px;
+        }
+    }
+
+    // .cards__item-text
+
+    &__item-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        color: $grayColor;
+        @media (max-width: $breakpoint768) {
+            font-size: 16px;
+        }
+    }
+
+    // .cards__item-img
+
+    &__item-img {
+        display: flex;
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            flex-direction: column;
+        }
+    }
+}

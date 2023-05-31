@@ -1,0 +1,81 @@
+.section {
+    background: linear-gradient(268.52deg, #e3e7f6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+    &__culture {
+        padding: 65px 97px 200px 200px;
+        background: $whiteColor;
+    }
+    @media (max-width: $breakpoint992) {
+        padding: 65px 0;
+    }
+    // .section__culture
+    &__culture {
+    }
+
+    // .section__title
+    &__title {
+    }
+
+    // .section__subtitle
+    &__subtitle {
+    }
+}
+
+.culture {
+    // .culture__item
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: center;
+    @media (max-width: $breakpoint992) {
+        grid-template-columns: repeat(2, 1fr); // Зміна на один стовпець для мобільних пристроїв
+        justify-content: center;
+    }
+    @media (max-width: $breakpoint768) {
+        grid-template-columns: repeat(1, 1fr); // Зміна на один стовпець для мобільних пристроїв
+    }
+
+    &__item {
+        background: #ffffff;
+        box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+        border-radius: 8px;
+        padding: 40px;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        @media (max-width: $breakpoint768) {
+            padding: 20px;
+        }
+    }
+
+    // .culture__item-title
+
+    &__item-title {
+        font-size: 23px;
+        line-height: 31px;
+        align-items: center;
+        color: $darkColor;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        @media (max-width: $breakpoint768) {
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+
+    // .culture__item-text
+
+    &__item-text {
+        margin-top: 22px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        color: $darkColor;
+        @media (max-width: $breakpoint768) {
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}

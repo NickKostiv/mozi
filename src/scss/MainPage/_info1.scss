@@ -1,0 +1,106 @@
+.section {
+    // .section__info
+    &__info {
+        padding: 70px 130px;
+        background: linear-gradient(268.52deg, #e3e7f6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+        @media (max-width: $breakpoint992) {
+            padding: 100px 0px;
+        }
+        @media (max-width: $breakpoint768) {
+            padding: 50px 0;
+        }
+        &.section__info-2 {
+            background: linear-gradient(335.73deg, #e3e7f6 12.46%, rgba(227, 231, 246, 0) 84.19%);
+            padding: 180px 100px;
+            @media (max-width: $breakpoint768) {
+                padding: 50px 0;
+            }
+        }
+    }
+    &__info-6 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.info {
+    display: flex;
+    // .info__item
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        gap: 169px;
+        @media (max-width: $breakpoint1200) {
+            gap: 80px;
+        }
+        @media (max-width: $breakpoint768) {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        &-6 {
+            flex-direction: row-reverse;
+        }
+    }
+
+    // .info__item-left
+
+    &__item-left {
+        flex: 0 1 45%;
+        @media (max-width: $breakpoint768) {
+            flex: 0 1 100%;
+        }
+    }
+    .info__item-logo {
+        @media (max-width: $breakpoint768) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            max-width: 100%;
+            width: 300px;
+            height: auto;
+        }
+    }
+
+    // .info__item-right
+
+    &__item-right {
+        flex: 0 1 45%;
+        @media (max-width: $breakpoint768) {
+            flex: 0 1 100%;
+        }
+        img {
+            width: 500px;
+            max-width: 100%;
+            height: auto;
+            @media (max-width: $breakpoint768) {
+                margin-top: 50px;
+            }
+        }
+        &.info__image-about {
+            display: flex;
+            @media (max-width: $breakpoint768) {
+                justify-content: center;
+            }
+        }
+    }
+}
+.button {
+    // .button__block
+
+    &__block {
+        @media (max-width: $breakpoint768) {
+            display: flex;
+            justify-content: center;
+        }
+        img {
+            @media (max-width: $breakpoint768) {
+                display: none;
+            }
+        }
+    }
+}
