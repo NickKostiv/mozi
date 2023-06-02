@@ -28,6 +28,9 @@
         }
         &-about {
             padding: 50px 20px;
+            img {
+                margin-top: 35px;
+            }
         }
 
         // .section__hero-contacts
@@ -35,13 +38,40 @@
             padding: 100px 0 100px 0;
         }
         &-career {
-            padding: 100px 0 100px 0;
+            // padding: 100px 50px 100px 0;
+            img {
+                // margin-top: 100px;
+            }
+            .btn__ {
+            }
         }
     }
 }
 .hero {
     display: flex;
     flex-wrap: wrap;
+    &__career {
+        padding-bottom: 150px;
+        .section__title {
+            @media (max-width: $breakpoint768) {
+                text-align: center;
+                margin-top: 35px;
+            }
+        }
+        img {
+            @media (max-width: $breakpoint768) {
+                margin-top: 75px;
+            }
+        }
+        .section__button {
+            margin-left: auto;
+            @media (max-width: $breakpoint768) {
+                display: flex;
+                justify-content: center;
+                margin-top: 35px;
+            }
+        }
+    }
     @media (max-width: $breakpoint768) {
         flex-direction: column;
     }
@@ -138,7 +168,8 @@
 
         @media (max-width: $breakpoint768) {
             flex: none;
-            align-self: center;
+            // align-self: center;
+            align-self: flex-end;
         }
         img {
             display: flex;

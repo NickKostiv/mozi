@@ -294,11 +294,11 @@ nav {
   padding: 50px 20px;
 }
 
-.section__hero-contacts {
-  padding: 100px 0 100px 0;
+.section__hero-about img {
+  margin-top: 35px;
 }
 
-.section__hero-career {
+.section__hero-contacts {
   padding: 100px 0 100px 0;
 }
 
@@ -308,6 +308,14 @@ nav {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.hero__career {
+  padding-bottom: 150px;
+}
+
+.hero__career .section__button {
+  margin-left: auto;
 }
 
 .hero__item-about {
@@ -1600,6 +1608,25 @@ footer {
     padding: 130px 0;
   }
 
+  .hero__career .section__title {
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  .hero__career img {
+    margin-top: 75px;
+  }
+
+  .hero__career .section__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 35px;
+  }
+
   .hero {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1649,8 +1676,8 @@ footer {
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
-    -ms-flex-item-align: center;
-        align-self: center;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
 
   .section__brands {
