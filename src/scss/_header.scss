@@ -82,6 +82,9 @@ nav {
             align-items: center;
             z-index: 22;
             animation: fade 0.1s linear;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
         }
     }
 
@@ -146,10 +149,7 @@ nav {
 
     // .menu__item
     .menu__item {
-        margin-top: 140px;
-        @media (max-height: 740px) {
-            margin-top: 30px;
-        }
+        // margin-top: 30px;
     }
 
     // .menu__link

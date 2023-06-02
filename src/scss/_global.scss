@@ -92,7 +92,7 @@ body {
     }
     .btn {
         // .btn_outline
-
+        display: none;
         &_outline {
         }
 
@@ -100,6 +100,9 @@ body {
 
         &_hiring {
             position: absolute;
+        }
+
+        &_primary {
         }
     }
 
@@ -148,7 +151,7 @@ body {
 
     @media (max-width: $breakpoint480) {
         font-size: 24px;
-        line-height: 28px;
+        line-height: 20px;
     }
 }
 .section__subtitle {
